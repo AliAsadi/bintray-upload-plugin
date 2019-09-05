@@ -1,0 +1,20 @@
+group 'com.aliasadi'
+version '1.0'
+
+apply plugin: 'groovy' //connect between resource and groovy plugin
+apply plugin: 'java-gradle-plugin'
+
+dependencies {
+    implementation 'com.jfrog.bintray.gradle:gradle-bintray-plugin:1.8.4'
+    implementation 'com.github.dcendents:android-maven-gradle-plugin:2.1'
+}
+
+apply plugin: 'maven'
+
+uploadArchives {
+    repositories {
+        mavenDeployer {
+            repository(url: uri('repo'))
+        }
+    }
+}
