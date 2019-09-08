@@ -10,7 +10,7 @@ buildscript {
 
     repositories {
         maven {
-            url uri('./android-bintray-plugin/repo')
+            url uri('./maven/repo')
         }
 
     }

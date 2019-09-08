@@ -14,7 +14,7 @@ apply plugin: 'maven'
 uploadArchives {
     repositories {
         mavenDeployer {
-            repository(url: uri('repo'))
+            repository(url: uri('../maven/repo'))
         }
     }
 }
