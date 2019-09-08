@@ -26,16 +26,6 @@ android {
 
 }
 
-
-apply plugin: 'com.aliasadi.android-bintray'
-
-uploadToBintray {
-    versionName = '0.0.1'
-    groupId = 'com.aliasadi'
-    artifactId = 'sample-lib'
-    gitUrl = 'www.google.com/test.git'
-}
-
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
@@ -45,3 +35,19 @@ dependencies {
     androidTestImplementation 'androidx.test:runner:1.2.0'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
 }
+
+Properties properties = new Properties()
+properties.load(project.rootProject.file('local.properties').newDataInputStream())
+
+apply plugin: 'com.aliasadi.android-bintray'
+
+uploadToBintray {
+    versionName = '0.0.1'
+    groupId = 'com.aliasadi'
+    artifactId = 'sample-lib'
+    gitUrl = 'www.google.com/test.git'
+    bintrayUser =  properties.get('bintrayUser')
+    bintrayKey =  properties.get('bintrayKey')
+}
+
+
