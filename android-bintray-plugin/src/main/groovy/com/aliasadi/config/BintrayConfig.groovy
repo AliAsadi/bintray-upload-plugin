@@ -6,6 +6,9 @@ import org.gradle.api.Project
 import org.gradle.api.tasks.Delete
 import org.gradle.api.tasks.javadoc.Javadoc
 
+/**
+ * Created by Ali Asadi on 05/09/2019.
+ */
 class BintrayConfig implements Config {
 
     private Project project

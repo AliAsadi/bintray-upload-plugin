@@ -9,6 +9,9 @@ import org.gradle.api.plugins.PluginManager
 import static com.aliasadi.config.ConfigType.Maven
 import static com.aliasadi.config.ConfigType.Bintray
 
+/**
+ * Created by Ali Asadi on 05/09/2019.
+ */
 class ProjectManager {
 
     private PluginManager pluginManager

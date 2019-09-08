@@ -1,10 +1,12 @@
 package com.aliasadi.config
 
-
 import com.aliasadi.extension.UploadExtension
 import com.aliasadi.plugin.AndroidPlugin
 import org.gradle.api.Project
 
+/**
+ * Created by Ali Asadi on 05/09/2019.
+ */
 class MavenConfig implements Config {
 
     private Project project

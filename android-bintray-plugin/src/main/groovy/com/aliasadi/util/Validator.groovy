@@ -3,6 +3,9 @@ package com.aliasadi.util
 import com.aliasadi.exceptions.ValidateException
 import com.aliasadi.extension.UploadExtension
 
+/**
+ * Created by Ali Asadi on 05/09/2019.
+ */
 class Validator {
 
     static void validate(UploadExtension uploadExtension) throws ValidateException {
