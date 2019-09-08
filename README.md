@@ -37,6 +37,26 @@ uploadToBintray {
 ./gradlew uploadToBintray -P user=BINTRAY_USER -P key=BINTRAY_KEY 
 ```
 
+### Misc
+Configuration of the `uploadToBintray` closure
+
+| Propertie | Description |
+| --- | --- |
+| *groupId | The group id to use for the upload |
+| *artifactId | The artifact id to use |
+| *versionName | The versionName to use |
+| *gitUrl | The url of the vcs for this project |
+| desc | A short description for this package in bintray |
+| website | A string with the url for the website of this project. The Github repo can be used here |
+| bintrayUser | The username to be used to upload |
+| bintrayKey | The bintray API key for the user account |
+| repoName | The repository name. Set to 'maven' by default |
+| packageName | The display name for this package in bintray. If not set, the artifactId will be used for this. |
+| organization | organization name to use for upload the library to specific organizationId |
+| issueTrackerUrl | The url of the issue tracker for the project |
+| licences | The licence name. Set to 'Apache-2.0' by default |
+
+
 ### License
 
 ```
