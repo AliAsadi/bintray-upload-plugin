@@ -45,7 +45,7 @@ uploadToBintray {
     versionName = '0.0.1'
     groupId = 'com.aliasadi'
     artifactId = 'sample-lib'
-    gitUrl = 'www.google.com/test.git'
+    gitUrl = 'https://github.com/sample-lib.get'
     bintrayUser =  properties.get('bintrayUser')
     bintrayKey =  properties.get('bintrayKey')
 }
