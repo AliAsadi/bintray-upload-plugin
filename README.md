@@ -32,6 +32,11 @@ uploadToBintray {
 
 ```
 
+### Upload to bintray
+```bash
+./gradlew uploadToBintray -P user=BINTRAY_USER -P key=BINTRAY_KEY 
+```
+
 ### License
 
 ```
