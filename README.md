@@ -1,7 +1,7 @@
 # Bintray Upload Plugin
 Insanely easy way to upload your Android Library to Bintray/JCenter 📦
 
-### Download
+# Download
 
  Add plugin dependencie to `build.gradle` of the **Project**
 ```gradle
@@ -15,7 +15,7 @@ buildscript {
 }
 ```
 
-### Getting started
+# Getting started
 
 1. Add apply plugin to `build.gradle` of the **Module** that you want to upload to bintray.
 ```gradle
@@ -32,7 +32,7 @@ uploadToBintray {
 
 ```
 
-### Upload to bintray
+# Upload to bintray
 ```bash
 ./gradlew uploadToBintray -P user=BINTRAY_USER -P key=BINTRAY_KEY 
 ```
