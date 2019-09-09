@@ -10,7 +10,7 @@ buildscript {
         jcenter()
     }
     dependencies {
-        classpath "com.aliasadi:android-bintray-plugin:1.0"
+        classpath "com.aliasadi:android-bintray-plugin:1.0.0"
     }
 }
 ```
@@ -27,7 +27,7 @@ uploadToBintray {
     versionName = '0.0.1'
     groupId = 'com.aliasadi'
     artifactId = 'sample-lib'
-    gitUrl = 'https://github.com/sample-lib.get'
+    gitUrl = 'https://github.com/sample-lib.git'
 }
 
 ```
