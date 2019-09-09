@@ -1,6 +1,8 @@
 # Bintray Upload Plugin
 Insanely easy way to upload your Android Library to Bintray/JCenter 📦
 
+[ ![Download](https://api.bintray.com/packages/aliassadi/maven/android-bintray-plugin/images/download.svg) ]
+
 # Download
 
  Add plugin dependencie to `build.gradle` of the **Project**
