@@ -14,20 +14,21 @@ properties.load(project.rootProject.file('local.properties').newDataInputStream(
 
 apply plugin: 'maven'
 
+task sourcesJar(type: Jar, dependsOn:classes) {
+    classifier = 'sources'
+    from sourceSets.main.allSource
+}
+artifacts {
+    archives sourcesJar
+}
+
 uploadArchives {
     repositories {
         mavenDeployer {
             repository(url: uri('../maven/repo'))
-        }
-    }
-}
-
-//uploadArchives {
-//    repositories {
-//        mavenDeployer {
 //            repository(url: 'https://api.bintray.com/maven/aliassadi/maven/android-bintray-plugin/;publish=1'){
 //                authentication(userName: properties.get('bintrayUser'), password: properties.get('bintrayKey'))
 //            }
-//        }
-//    }
-//}
+        }
+    }
+}
