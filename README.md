@@ -38,7 +38,7 @@ uploadToBintray {
 ```
 
 # Misc
-Configuration of the `uploadToBintray` closure
+Configuration of the **uploadToBintray** closure
 
 | Propertie | Description |
 | --- | --- |
