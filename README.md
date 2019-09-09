@@ -37,7 +37,7 @@ uploadToBintray {
 ./gradlew uploadToBintray -P user=BINTRAY_USER -P key=BINTRAY_KEY 
 ```
 
-### Misc
+# Misc
 Configuration of the `uploadToBintray` closure
 
 | Propertie | Description |
