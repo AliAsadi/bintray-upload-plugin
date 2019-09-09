@@ -26,8 +26,8 @@ apply plugin: 'com.aliasadi.android-bintray'
 uploadToBintray {
     versionName = '0.0.1'
     groupId = 'com.aliasadi'
-    artifactId = 'sample-lib'
-    gitUrl = 'https://github.com/sample-lib.git'
+    artifactId = 'sample-library'
+    gitUrl = 'https://github.com/sample-library.git'
 }
 
 ```
