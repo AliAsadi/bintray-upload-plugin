@@ -9,6 +9,9 @@ dependencies {
     implementation 'com.github.dcendents:android-maven-gradle-plugin:2.1'
 }
 
+Properties properties = new Properties()
+properties.load(project.rootProject.file('local.properties').newDataInputStream())
+
 apply plugin: 'maven'
 
 uploadArchives {
@@ -18,3 +21,13 @@ uploadArchives {
         }
     }
 }
+
+//uploadArchives {
+//    repositories {
+//        mavenDeployer {
+//            repository(url: 'https://api.bintray.com/maven/aliassadi/maven/android-bintray-plugin/;publish=1'){
+//                authentication(userName: properties.get('bintrayUser'), password: properties.get('bintrayKey'))
+//            }
+//        }
+//    }
+//}
