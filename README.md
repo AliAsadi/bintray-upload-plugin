@@ -35,9 +35,14 @@ uploadToBintray {
 ```
 
 # Upload to bintray
+* Terminal
 ```bash
 ./gradlew uploadToBintray -P bintrayUser=USER -P bintrayKey=KEY 
 ```
+* IDE
+<p>
+  <img src="https://i.ibb.co/pwpx0Tj/Screen-Shot-2019-09-10-at-13-40-49.png" width="450" title="hover text">
+</p>
 
 # Misc
 Configuration of the **uploadToBintray** closure
