@@ -1,7 +1,7 @@
 # Bintray Upload Plugin
 Insanely easy way to upload your Android Library to Bintray/JCenter 📦
 
-![Download](https://api.bintray.com/packages/aliassadi/maven/android-bintray-plugin/images/download.svg)
+![Download](https://api.bintray.com/packages/aliassadi/maven/bintray-upload/images/download.svg)
 
 # Download
 
@@ -12,7 +12,7 @@ buildscript {
         jcenter()
     }
     dependencies {
-        classpath "com.aliasadi:android-bintray-plugin:1.0.0"
+        classpath "com.aliasadi:bintray-upload:1.0.0"
     }
 }
 ```
@@ -21,7 +21,7 @@ buildscript {
 
 1. Add apply plugin to `build.gradle` of the **Module** that you want to upload to bintray.
 ```gradle
-apply plugin: 'com.aliasadi.android-bintray'
+apply plugin: 'com.aliasadi.bintray-upload'
 ```
 2. Use the `uploadToBintray` closure to set the info of your package:
 ```gradle
