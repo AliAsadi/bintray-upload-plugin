@@ -20,10 +20,12 @@ buildscript {
 # Getting started
 
 1. Add apply plugin to `build.gradle` of the **Module** that you want to upload to bintray.
+
 ```gradle
 apply plugin: 'com.aliasadi.bintray-upload'
 ```
 2. Use the `uploadToBintray` closure to set the info of your package:
+
 ```gradle
 uploadToBintray {
     versionName = '0.0.1'
