@@ -36,7 +36,7 @@ uploadToBintray {
 
 # Upload to bintray
 ```bash
-./gradlew uploadToBintray -P user=BINTRAY_USER -P key=BINTRAY_KEY 
+./gradlew uploadToBintray -P bintrayUser=USER -P bintrayKey=KEY 
 ```
 
 # Misc
