@@ -67,41 +67,12 @@ class ProjectManager {
 
     void createUploadTask() {
 
-        project.tasks.create(name: 'uploadToBintray', dependsOn: [project.clean, project.bintrayUpload]) {
-            doLast {
-                log("DONE!!")
-            }
-        }
+        project.tasks.create(name: 'uploadToBintray', dependsOn: [project.clean, project.bintrayUpload])
 
         project.getTasks().getByName('uploadToBintray').mustRunAfter(project.clean)
 
         project.bintrayUpload.dependsOn project.build
         project.bintrayUpload.dependsOn project.install
-
-
-        project.clean {
-            doLast {
-                log("clean project :" +project.name)
-            }
-        }
-
-        project.build {
-            doLast {
-                log("build project :" +project.name)
-            }
-        }
-
-        project.install {
-            doLast {
-                log("install project :" +project.name)
-            }
-        }
-    }
-
-    private void log(String msg) {
-        println "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
-        println "AndroidBintrayPlugin -> " + msg
-        println "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
     }
 
 
