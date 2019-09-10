@@ -12,7 +12,7 @@ buildscript {
         jcenter()
     }
     dependencies {
-        classpath "com.aliasadi:bintray-upload:1.0.0"
+        classpath "com.aliasadi:bintray-upload:1.0.1"
     }
 }
 ```
