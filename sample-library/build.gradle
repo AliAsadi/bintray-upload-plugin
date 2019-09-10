@@ -39,7 +39,7 @@ dependencies {
 Properties properties = new Properties()
 properties.load(project.rootProject.file('local.properties').newDataInputStream())
 
-apply plugin: 'com.aliasadi.android-bintray'
+apply plugin: 'com.aliasadi.bintray-upload'
 
 uploadToBintray {
     versionName = '0.0.1'

@@ -1,2 +1,2 @@
-include ':sample-library',':android-bintray-plugin'
+include ':sample-library', ':bintray-upload'
 
