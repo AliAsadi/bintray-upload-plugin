@@ -8,7 +8,7 @@ import org.gradle.api.Project
 /**
  * Created by Ali Asadi on 05/09/2019.
  */
-class AndroidPlugin implements Plugin<Project> {
+class BintrayUploadPlugin implements Plugin<Project> {
 
 
     @Override

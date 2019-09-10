@@ -1,7 +1,6 @@
 package com.aliasadi.config
 
 import com.aliasadi.extension.UploadExtension
-import com.aliasadi.plugin.AndroidPlugin
 import org.gradle.api.Project
 
 /**
