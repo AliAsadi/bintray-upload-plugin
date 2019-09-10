@@ -16,13 +16,13 @@ class AndroidPlugin implements Plugin<Project> {
 
         def projectManager = ProjectManager.newInstance(project)
         projectManager.createUploadExtension()
-        projectManager.createJarFiles()
         projectManager.applyMavenPlugin()
         projectManager.applyBintrayPlugin()
         projectManager.createUploadTask()
 
         project.afterEvaluate {
             Validator.validate(projectManager.getUploadExtension())
+            projectManager.createJarFiles()
             projectManager.applyMavenConfig()
             projectManager.applyBintrayConfig()
         }
