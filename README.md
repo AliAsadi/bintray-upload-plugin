@@ -36,7 +36,7 @@ uploadToBintray {
 
 # Upload to bintray
 * Terminal
-```bash
+```
 ./gradlew uploadToBintray -P bintrayUser=USER -P bintrayKey=KEY 
 ```
 * IDE
