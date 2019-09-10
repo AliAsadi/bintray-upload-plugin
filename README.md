@@ -31,7 +31,6 @@ uploadToBintray {
     artifactId = 'sample-library'
     gitUrl = 'https://github.com/sample-library.git'
 }
-
 ```
 
 # Upload to bintray
@@ -39,6 +38,7 @@ uploadToBintray {
 ```
 ./gradlew uploadToBintray -P bintrayUser=USER -P bintrayKey=KEY 
 ```
+
 * IDE
 <p>
   <img src="https://i.ibb.co/pwpx0Tj/Screen-Shot-2019-09-10-at-13-40-49.png" width="450" title="hover text">
